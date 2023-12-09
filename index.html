@@ -1,176 +1,253 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Code</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="icon" type="image/png" href="./src/images/icon.jpg">
+
+    <script src="./src/js/jquery-3.6.0.min.js"></script>
+    <script src="./src/js/kit-fontawesome.js"></script>
+    <script src="./src/js/scroll-page.js"></script>
+
+    <link rel="stylesheet" href="./src/styles/style.css" />
 </head>
 
 <body>
+
+    <!-- header -->
     <header class="header">
         <nav class="navbar">
             <div class="navbar-container container">
                 <div>
-                    <h1 class="navbar-brand">Sanket Bodake</h1>
+                    <h1 class="navbar-brand" href="index.html">Farhan Ahadi</h1>
                 </div>
                 <ul class="menu-items">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#my-works">Portfolio</a></li>
-                    <li><a href="#contact-me">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#skill-me">My Skill</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="./page/contact.php">Contact</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="home-content" id="home-page">
+
+        <div class="home-content" id="home">
             <div class="name">
-                <h1>Hi, I'm Sanket</h1>
-                <p>A Web Developer in training.</p>
-            </div>
-            <div class="angle-down-icon">
-                <a href="#about"><i class="fas fa-angle-down"></i></a>
+                <h1>Hello, I&#8217;m Farhan</h1>
+                <p>A Software Developer in learning.</p>
+                <form
+                    action="https://raw.githubusercontent.com/farhan128/My-Portfolio/master/src/images/Cv%20Moch.farhan%20Ahadi.pdf">
+                    <button class="btn-down-cv">Download CV</button>
+                </form>
             </div>
         </div>
+        <div class="angle-down-icon">
+            <a href="#about-me"><i class="fas fa-angle-down"></i></a>
+        </div>
     </header>
-    <section class="about-me" id="about">
+
+    <section class="about-me" id="about-me">
         <div class="container">
             <div class="about-content">
-                <div class="left-content">
-                    <div>
-                        <h1 class="about-heading">About Me</h1>
-                    </div>
-                    <img src="https://i.postimg.cc/Hx4nChpH/fbavatar-1630400663387-6838396024049256103.png"
-                        alt="image" />
-                    <p>
-                        I am 16 year old, BBA-CA student studied at Pratibha College of Commerce and Computer studies.
-                        I really enjoy solving problems as well as making things pretty and easy to use. I can't stop
-                        learning new
-                        things; the more, the better.
-                    </p>
-                    <div class="work-arrow">
+                <div>
+                    <h1 class="about-heading">About Me</h1>
+                </div>
+                <div class="about-center">
+                    <img src="./src/images/profile.jpg" alt="image" />
+                    <div class="center-content">
+                        <p>Nama saya Moch.farhan Ahadi, lulusan S1 Teknik Informatika di Universitas Pamulang. saya
+                            sangat
+                            menyukai bahasa pemrograman Java dan C++/C, dan suka bermain dengan Database Mysql. saya
+                            sangat
+                            senang bekerja dengan team atau individu. dan saya sebenarnya juga tertarik dengan hal baru
+                            yang
+                            berhubungkan dengan teknologi, jadi tidak akan berhenti untuk selalu belajar hal-hal yang
+                            baru.
+                        </p>
                         <p>
-                            <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
+                            Hobbi : coding, berenang, mendengarkan musik
                         </p>
                     </div>
                 </div>
-                <div class="skills">
-                    <div class="right-content">
+            </div>
+        </div>
+    </section>
+
+    <section class="skill-me" id="skill-me">
+        <div class="container">
+            <h1 class="skill-heading">My Skills</h1>
+            <div class="skill-content">
+                <div class="kemampuan">
+                    <div class="skill-left">
                         <div>
-                            <h1 class="skills-heading">My Skills</h1>
+                            <h3 class="kemampuan-heading">Kemampuan</h3>
                         </div>
-                        <div class="skills-bar">
+                        <div class="kemampuan-bar">
                             <div class="bar">
                                 <div class="info">
-                                    <span>HTML</span>
+                                    <span>Java</span>
                                 </div>
-                                <div class="progress-line"><span class="html"></span></div>
+                                <div class="progress-line"><span class="java"></span></div>
                                 <div class="bar">
                                     <div class="info">
-                                        <span>CSS</span>
+                                        <span>Kotlin</span>
                                     </div>
-                                    <div class="progress-line"><span class="css"></span></div>
+                                    <div class="progress-line"><span class="kotlin"></span></div>
                                     <div class="bar">
                                         <div class="info">
-                                            <span>BOOTSTRAP</span>
+                                            <span>PHP</span>
                                         </div>
-                                        <div class="progress-line"><span class="bootstrap"></span></div>
+                                        <div class="progress-line"><span class="php"></span></div>
                                         <div class="bar">
                                             <div class="info">
-                                                <span>JAVASCRIPT</span>
+                                                <span> C++/C</span>
                                             </div>
-                                            <div class="progress-line"><span class="javascript"></span></div>
+                                            <div class="progress-line"><span class="c"></span></div>
                                             <div class="bar">
                                                 <div class="info">
-                                                    <span>C Programming</span>
+                                                    <span>MYSQL</span>
                                                 </div>
-                                                <div class="progress-line"><span class="c"></span></div>
+                                                <div class="progress-line"><span class="mysql"></span></div>
+                                                <div class="bar">
+                                                    <div class="info">
+                                                        <span>Office (Word, PPT)</span>
+                                                    </div>
+                                                    <div class="progress-line"><span class="office"></span></div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="work-arrow-2">
-                            <p>
-                                <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
-                            </p>
+                    </div>
+                </div>
+
+                <div class="skill-right">
+                    <div>
+                        <h3 class="keahlian-heading">Keahlian</h3>
+                    </div>
+                    <div class="programing">
+                        <h3>Programing :</h3>
+                        <ul>
+                            <li>Android Native</li>
+                            <p>Bahasa pemprograman yang digunakan java dan kotlin</p>
+                            <li>Java Console</li>
+                            <p>Membuat program console</p>
+                            <li>C++/C console</li>
+                            <p>Membuat program console</p>
+                        </ul>
+
+                        <h3>Database :</h3>
+                        <ul>
+                            <li>MYSQL</li>
+                            <p>Membuat design dan query Database</p>
+                        </ul>
+
+                        <h3>Office :</h3>
+                        <ul>
+                            <li>Word</li>
+                            <p>Membuat apa saja yang berkaitan dengan Pengolah kata (Word)</p>
+                            <li>PPT</li>
+                            <p>Membuat presentasi yang menarik</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project" id="project">
+        <div class="project">
+            <!--text-->
+            <div class="project-text ">
+                <p>Project</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="meta">
+                        <div class="photo" style="background-image: url(./src/images/proj1.png)">
                         </div>
+                        <ul class="details">
+                            <li class="fab fa-github"><a href="hhttps://github.com/farhan128/PM_Alghozali">
+                                    farhan128/sispon</a></li>
+                            <li class="tags">
+                                <ul>
+                                    <li>Android Studio, </li>
+                                    <li>Java, </li>
+                                    <li>Kotlin, </li>
+                                    <li>MYSQL, </li>
+                                    <li>PHP</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h1>SIPON (Sistem Informasi Pondok)</h1>
+                        <h2>Magang</h2>
+                        <p>
+                            Sipon merupakan aplikasi informasi yang berkaitan dilingkungan pondok, seperti melakukan
+                            pendaftaran santri baru, melihat penerimaan santri baru, informasi santri lama dan masih
+                            banyak
+                            lagi. digunakan oleh PM Al-Ghozali. <b>(Masih perbaikan)</b>
+                        </p>
+                        <p class="read-more">
+                            <a href="#">Read More</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card alt">
+                    <div class="meta">
+                        <div class="photo"
+                            style="background-image: url(./src/images/proj2.png)">
+                        </div>
+                        <ul class="details">
+                            <li class="fab fa-github"><a href="https://github.com/farhan128/Kasir-qu">
+                                    farhan128/kasir-qu</a></li>
+                            <li class="tags">
+                                <ul>
+                                    <li>Android Studio, </li>
+                                    <li>Java, </li>
+                                    <li>Kotlin, </li>
+                                    <li>MYSQL, </li>
+                                    <li>PHP</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="description">
+                        <h1>Kasir-qu</h1>
+                        <h2>Magang</h2>
+                        <p>Kasir-qu merupakan aplikasi informasi barang dan kasir, fitur : informasi barang, pemasukan,
+                            pengeluaran, kasir dan masih banyak lagi. digunakan oleh Kantin Rumah Sakit Dinda.</p>
+                        <p class="read-more">
+                            <a href="#">Read More</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="my-works">
-        <div class="portfolio">
-            <div class="proj-heading">
-                <h1>Portfolio</h1>
-            </div>
-            <div class="portfolio-content container">
-                <div class="proj-1">
-                    <img src="https://i.postimg.cc/qM9TjGTG/Screenshot-80.png">
-                    <div class="proj1-details">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <i class="fab fa-js"></i>
-                        <h2>Restaurant Website UI</h2>
-                        <p>Build Using HTML,CSS,JS</p>
-                        <button><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source
-                                <i class="fas fa-external-link-alt"></i></a>
-                        </button>
-                        <button><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </button>
-                    </div>
-                </div>
-                <div class="proj-2">
-                    <img src="https://i.postimg.cc/FR848bSm/Screenshot-76.png">
-                    <div class="proj2-details">
-                        <i class="fab fa-html5"></i>
-                        <i class="fab fa-css3-alt"></i>
-                        <h2>Profile Card</h2>
-                        <p>Build Using HTML,CSS</p>
-                        <button><a href="https://github.com/sanketbodke/CodePen" target="blank">View source <i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </button>
-                        <button><a href="https://codepen.io/sanketbodke/pen/NWgKyZW" target="blank">Try it Live <i
-                                    class="fas fa-external-link-alt"></i></a>
-                        </button>
-                    </div>
-                </div>
-                <div class="more-work">
-                    <p>
-                        More
-                    </p>
-                    <a href="https://codepen.io/sanketbodke" target="blank">CodePen</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="contact" id="contact-me">
+
+    <footer class="footer" id="footer">
         <div class="container">
-            <div class="contact-content">
-                <h2>Contact Me</h2>
-                <p class="mail">
-                    Get in touch with me <i class="fas fa-arrow-right"></i> sanketbodke26@gmail.com
-                </p>
-                <p class="links">Or find me on:</p>
-                <a href="https://www.linkedin.com/in/sanket-bodake-995b5b205/" target="blank"><i
-                        class="fab fa-linkedin">
-                        Linkedin</i></a>
-                <a href="https://codepen.io/sanketbodke" target="blank"><i class="fab fa-codepen"> CodePen</i></a>
-                <a href="https://github.com/sanketbodke" target="blank"><i class="fab fa-github"></i> Github</a>
-                <a href="https://dev.to/sanketbodake" target="blank"><i class="fab fa-dev"></i> Dev Community</a>
-                <a href="https://twitter.com/Sanket46171296" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
-                <a href="https://www.instagram.com/imsanketbodke/" target="blank"><i class="fab fa-instagram"></i>
+            <div class="footer-content">
+                <h2>" Jangan pernah putus asa untuk menggapai impian atau cita-cita. "</h2>
+                <p class="mail">Copyright by<a href="https://github.com/farhan128">farhan128</a></p>
+
+                <a href="https://www.linkedin.com/in/moch-farhan-ahadi-184521188/" target="blank"><i
+                        class="fab fa-linkedin"> Linkedin</i></a>
+                <a href="https://github.com/farhan128" target="blank"><i class="fab fa-github"></i> Github</a>
+                <a href="https://www.facebook.com/mochfarhanahadi/" target="blank"><i class="fab fa-facebook">
+                        Facebook</i></a>
+                <a href="https://www.instagram.com/aaahadfr/" target="blank"><i class="fab fa-instagram"></i>
                     Instagram</a>
             </div>
         </div>
-    </div>
-    <!-- JAVASCRIPT -->
-    <script src="src/js/scroll.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </footer>
 </body>
 
 </html>
